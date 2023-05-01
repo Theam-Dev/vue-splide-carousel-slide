@@ -1,15 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <splide>
+  <splide-slide>
+    <img src="@/assets/img/p1.jpg">
+  </splide-slide>
+  <splide-slide>
+    <img src="@/assets/img/p2.jpg">
+  </splide-slide>
+  <splide-slide>
+    <img src="@/assets/img/p3.jpg">
+  </splide-slide>
+</splide>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
+import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Splide,
+    SplideSlide,
   }
 }
 </script>
